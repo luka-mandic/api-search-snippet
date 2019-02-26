@@ -1,0 +1,152 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "currency": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "upc_code": {
+      "type": "string",
+      "required": true
+    },
+    "product": {
+      "type": "string",
+      "required": true
+    },
+    "offers": {
+      "type": "array",
+      "required": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceType": {
+            "type": "string",
+            "required": true
+          },
+          "sourceObjectId": {
+            "type": "number",
+            "required": true
+          },
+          "productId": {
+            "type": "number",
+            "required": true
+          },
+          "network": {
+            "type": "string",
+            "required": true
+          },
+          "networkProductId": {
+            "type": "string",
+            "required": false
+          },
+          "networkOfferId": {
+            "type": "string",
+            "required": true
+          },
+          "merchantId": {
+            "type": "string",
+            "required": true
+          },
+          "merchantName": {
+            "type": "string",
+            "required": true
+          },
+          "merchantImage": {
+            "type": "string",
+            "required": true
+          },
+          "offerName": {
+            "type": "string",
+            "required": true
+          },
+          "offerImage": {
+            "type": "string",
+            "required": true
+          },
+          "currency": {
+            "type": "string",
+            "required": true
+          },
+          "price": {
+            "type": "number",
+            "required": true
+          },
+          "priceDisplay": {
+            "type": "string",
+            "required": true
+          },
+          "shippingCosts": {
+            "type": "number",
+            "required": false
+          },
+          "shippingCostsDisplay": {
+            "type": "string",
+            "required": false
+          },
+          "url": {
+            "type": "string",
+            "required": true
+          },
+          "trackingUrl": {
+            "type": "string",
+            "required": true
+          },
+          "manufacturer": {
+            "type": "string",
+            "required": true
+          },
+          "availabilityStatus": {
+            "type": "string",
+            "required": false
+          },
+          "availabilityTextLocalised": {
+            "type": "string",
+            "required": false
+          },
+          "savingsTotal": {
+            "type": "number",
+            "required": false
+          },
+          "savingsTotalDisplay": {
+            "type": "string",
+            "required": false
+          },
+          "savingsTotalPercentage": {
+            "type": "number",
+            "required": false
+          },
+          "savingsTotalPercentageDisplay": {
+            "type": "string",
+            "required": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
